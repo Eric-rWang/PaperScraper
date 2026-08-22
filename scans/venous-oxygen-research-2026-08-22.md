@@ -1,0 +1,180 @@
+# Venous Oxygen Research Scan — 2026-08-22
+
+**Search window:** Fortieth scan in the series, run **one day** after 2026-08-21. Emphasis on work published or first-surfacing after 08-21, with the standard fallback to the best-available venous-specific work already catalogued. Sources swept today: PubMed/PMC, arXiv (physics.med-ph / eess.IV new-listing sweep), bioRxiv/medRxiv, Optica (Biomed. Opt. Express, Optics Letters, Applied Optics) incl. Optica Open preprints, SPIE / *J. Biomed. Opt.*, *Photoacoustics* (ScienceDirect), Springer, Wiley (*Advanced Science*, *Adv. Healthcare Mater.*, *J. Biophotonics*), De Gruyter, IOP (*J. Phys. Photonics*), MDPI (*Sensors/Biosensors/Applied Sciences*), IEEE Xplore, Nature / *Sci. Rep.* / *Commun. Med.*, American Physiological Society journals, ClinicalTrials.gov, plus Semantic Scholar / Google-Scholar-style index snippets and ResearchGate.
+
+**Verification caveat:** Publisher **full-text** pages and several databases remain unreachable for direct `WebFetch` in this environment. The usual publisher/preprint hosts (pmc.ncbi.nlm.nih.gov, opg.optica.org, preprints.opticaopen.org, iopscience.iop.org, link.springer.com, sciencedirect.com, wiley.com, spiedigitallibrary.org, journals.physiology.org) return **HTTP 403 / EGRESS_BLOCKED** to direct fetch; arxiv.org / pubmed.ncbi.nlm.nih.gov are egress-blocked on direct new-listing fetch. The blocks are source-/policy-side, not relay failures (agent proxy healthy). Every reference below was therefore cross-checked across **≥2 independent search-index snippets**; per-item notes state what was confirmed and what could not be read directly on a publisher page.
+
+---
+
+## ⚠️ Read this first — day summary
+
+**No new venous-specific optical measurement paper first-surfaced in the one-day 08-21 → 08-22 window.** Repeated targeted sweeps (SvO₂ / ScvO₂ optical, jugular PA/NIRS, deep-vein PA, vis-OCT venular oximetry, hyperspectral fundus, DOS/DOI respiration-modulation, SFDI) returned only the **standing corpus** plus **two items new to this corpus but not venous-specific** — both tissue-level wearable-NIRS entries logged under the standing-context section, not as ranked venous results.
+
+**No item in the ranked top-5 lists is genuinely new to the corpus today.** The 08-13 hyperspectral retinal system (Tran et al., *J. Biomed. Opt.* 31(3):036006, §2.5) remains the most recent genuinely-new intravascular-venular result and is carried forward unchanged.
+
+**No new venous-specific systemic (SvO₂/ScvO₂) measurement paper today — the nineteenth consecutive scan cycle with none.** All standing Topic-1 anchors and the deep-vein PA anchors are unchanged and carried forward with scores held.
+
+**Per the standing brief: fewer than 5 genuinely strong, genuinely venous, genuinely non-invasive-optical *new* papers first-surfaced today for either topic** once arterial-only and tissue-level (StO₂) work is excluded. The lists below present the best available with honest relevance scores.
+
+---
+
+## Topic 1 — Non-invasive monitoring of venous blood oxygen (SvO₂ / ScvO₂ / peripheral venous)
+
+*No new primary measurement items today.* Standing best-available set (all previously surfaced), scores carried forward. **No primary non-invasive systemic venous-O₂ measurement paper has first-surfaced since before 2026-07-15.**
+
+### 1.1 — Estimation of Venous Oxygen Saturation Through Non-Invasive Optical Sensing at the Jugular Veins *(previously surfaced — scan 06-10 §1.1; flagship optical-venous device paper)*
+- **Authors:** Alqahtani et al.
+- **Year / Venue:** 2024 · *Current Directions in Biomedical Engineering* 10(2) (De Gruyter; CDBME-2024-2072)
+- **Link / DOI:** https://doi.org/10.1515/cdbme-2024-2072
+- **Relevance:** 9.0/10 — direct non-invasive optical SvO₂ at the external/internal jugular; the closest thing the corpus has to a pulse-oximeter-form venous device.
+- **Novelty:** Proof-of-concept optical sensor that identifies the jugular venous waveform and estimates SvO₂ within the healthy 60–90 % band (≈70–75 % across a three-subject set: 71.1 / 72.2 / 70.4 %).
+- **Integration insight:** Anchor for the "wearable venous pulse oximeter" thesis; every Topic-1 wearable/peripheral entry is a variation on isolating the venous component this device targets at the neck. The authors' own stated next step — calibration/validation against gold-standard blood-gas analysers — remains the open gate for the whole optical-jugular class.
+- **Metadata note:** Title/authors/venue/DOI re-confirmed today via De Gruyter Brill listing + ResearchGate snippet; full text not read (publisher HTML not directly fetchable).
+
+### 1.2 — Quantifying Changes in Oxygen Saturation of the Internal Jugular Vein In Vivo Using Deep Neural Networks and Subject-Specific 3-D Monte-Carlo Models *(previously surfaced — scan 06-10 §1.2)*
+- **Authors:** (IJV DNN / Monte-Carlo group)
+- **Year / Venue:** 2024 · *Optics Letters* 49(10):2669
+- **Link / DOI:** https://opg.optica.org/ol/abstract.cfm?uri=ol-49-10-2669 (Optica abstract locator; raw DOI numeral unverified — see flag)
+- **Relevance:** 8.5/10 — model-based recovery of IJV sO₂ change from multi-channel NIRS reflectance.
+- **Novelty:** Subject-specific 3-D Monte-Carlo forward models train a DNN to invert measured reflectance into IJV saturation change, addressing the partial-volume / overlying-tissue confound.
+- **Integration insight:** Supplies the computational-inversion half of the jugular-NIRS approach; complements §1.1's hardware. The Monte-Carlo-to-DNN pattern recurs in the Topic-2 PA fluence-correction work.
+- **Metadata flag:** DOI string not re-verifiable on the Optica page today (403); Optica locator (ol-49-10-2669) + title/authors/year cross-confirmed via two index snippets. Treat raw DOI numeral as **unverified**; cite via the Optica abstract URL.
+
+### 1.3 — Proof-of-Concept Non-Invasive Estimation of Peripheral Venous Oxygen Saturation (pulse-modulation venous oximetry) *(previously surfaced — scan 06-10/06-11)*
+- **Authors:** (peripheral-venous oximetry group; BioMedical Engineering OnLine)
+- **Year / Venue:** 2017 · *BioMedical Engineering OnLine* 16:60
+- **Link / DOI:** https://doi.org/10.1186/s12938-017-0351-x · PMC5437414
+- **Relevance:** 8.0/10 — foundational demonstration that an induced/modulated venous signal yields a peripheral SvO₂ estimate optically.
+- **Novelty:** External stimulation induces cyclical venous fluctuation, lifting the venous component out of the low-SNR background so a PPG-style optical readout can estimate local venous saturation.
+- **Integration insight:** Conceptual root of the "modulate the vein, then demodulate" family (muscle-stimulation PPG, e-tattoo spatial filtering, PPG-waveform venous oximetry). Landmark; recurs because nothing newer has displaced it as the peripheral-venous proof-of-concept.
+- **Metadata note:** Re-confirmed today via BioMedical Engineering OnLine full-text listing + PMC snippet.
+
+### 1.4 — Towards Simultaneous Non-Invasive Arterial and Venous Oxygenation Monitoring with a Wearable Optical E-Tattoo *(previously surfaced — scan 07-01)*
+- **Authors:** Tan P., Lu N., et al. (UT Austin)
+- **Year / Venue:** 2023/2024 · IEEE (EMBC-lineage); related patent US 20250025074
+- **Link / DOI:** https://pubmed.ncbi.nlm.nih.gov/38083768/ · patent: https://patents.justia.com/patent/20250025074
+- **Relevance:** 8.0/10 — explicitly names non-invasive **venous** oxygenation as the unmet need and targets it with a wrist-worn optical patch.
+- **Novelty:** Ultra-thin self-adherent optical e-tattoo measures arterial + venous pulses from multiple wrist sites; proposes spatial filtering to separate arterial/venous crosstalk.
+- **Integration insight:** The wearable-form embodiment of the venous-oximetry goal; its arterial/venous separation problem is the same one §1.3 attacks by modulation and §1.1 sidesteps by anatomy. The standing JMIR hypoxia-accuracy caution bears directly on this device class, and today's new wearable-FD-NIRS lead (below) is a hardware sibling on the quantitative-separation side.
+
+### 1.5 — A New Non-Invasive Method for the Assessment of Central Venous Oxygen Saturation (Mespere VO100 jugular NIRS) *(previously surfaced — scan 06-14; commercial NIRS device)*
+- **Authors:** (VO100 clinical validation group)
+- **Year / Venue:** 2023/2024 · *J. Cardiothorac. Vasc. Anesth.* (S1053-0770 lineage) / ScienceDirect · PMID 37827917
+- **Link / DOI:** https://doi.org/10.1053/j.jvca.2023.10.006 · https://pubmed.ncbi.nlm.nih.gov/37827917/
+- **Relevance:** 8.0/10 — a marketed non-invasive device that estimates central venous saturation from jugular-area NIRS (SjvO₂ surrogate for ScvO₂); reported strong correlation with invasive ScvO₂ (r ≈ 0.9 in prior pediatric jugular-NIRS work).
+- **Novelty:** Transcutaneous NIRS sensor placed over the internal-jugular projection recovers a continuous central-venous-saturation surrogate at the bedside, the commercial counterpart to §1.1/§1.2.
+- **Integration insight:** The device most directly bridging Topic-1's clinical need and Topic-2's optical physics on the systemic-venous front; validation-cohort agreement is the key open question for the whole jugular-NIRS class. The pediatric jugular-NIRS validation (r = 0.91; bias 2.92 %, LoA −5.2 % to +11 %; TÜBİTAK *Turk. J. Med. Sci.* 50(5), PMC7491293) grounds the technique's agreement claim; re-confirmed today via ScienceDirect record (S1053077023007826) + PMC7491293 snippet.
+
+### 1.6 — Noninvasix LIVOx Optoacoustic Central Venous Oxygenation Monitor (ScvO₂ for septic shock) *(previously surfaced — scan 08-11; device/regulatory anchor, not new research)*
+- **Authors:** Noninvasix, Inc. / Esenaliev–Petrov optoacoustic lineage (UTMB)
+- **Year / Venue:** FDA Breakthrough-Device designation 2022; ongoing development (not a dated research paper)
+- **Link / DOI:** company / regulatory record; underlying method rooted in the superior-sagittal-sinus / transfontanelle optoacoustic oximetry lineage (*Sci. Rep.* 2022, s41598-022-19350-x)
+- **Relevance:** 7.5/10 — an optoacoustic embodiment explicitly targeting **central venous** (ScvO₂) saturation non-invasively; the clearest regulatory-pathway endpoint in the corpus for the venous-optoacoustic thesis.
+- **Novelty:** Laser-optoacoustic probe reads oxygenation from a named central vein directly, rather than through a tissue-StO₂ surrogate — the device-development counterpart to the IJV-PA research anchor §2.1.
+- **Integration insight:** Demonstrates that non-invasive venous optoacoustic oximetry has crossed from lab demonstration into a regulated device pathway; the commercial bookend to Topic-2's PA measurement physics.
+- **Metadata flag:** Regulatory/company record, not a peer-reviewed dated paper; treat designation year as reported. No new filing seen today.
+
+**Topic-1 clinical-trial watch (context, not a paper):** ClinicalTrials.gov **NCT06511999** — *Feasibility and Validation of Continuous Measurement of Jugular Venous Oxygen Saturation (SjO₂) in Comatose Patients After Cardiac Arrest* (RECRUITING). Logged for situational awareness only; the SjO₂ measurement is **catheter-based (invasive)**, so it is **out of scope** for non-invasive optical venous oximetry — noted here so future scans do not re-surface it as an optical result.
+
+---
+
+## Topic 2 — Optical imaging techniques for non-invasively obtaining venous blood oxygen (PA/PACT, NIRS, DOI/DOT, hyperspectral, vis-OCT, SFDI)
+
+*No new item in the ranked set today.* Measurement anchors carried forward with scores held; the 08-13 hyperspectral retinal system (§2.5) remains the most recent genuinely-new entry.
+
+### 2.1 — Noninvasive In Vivo Photoacoustic Measurement of Internal Jugular Venous Oxygenation in Humans *(previously surfaced — scan 06-10; the Topic-2 anchor)*
+- **Authors:** (IJV-PA human oximetry group; Garcia-Uribe / Wang lineage)
+- **Year / Venue:** 2023 · arXiv:2303.10775 / PA human-imaging lineage
+- **Link / DOI:** https://arxiv.org/abs/2303.10775
+- **Relevance:** 9.5/10 — the single most on-target Topic-2 paper: photoacoustic sO₂ of a named deep **vein** (internal jugular) in humans, non-invasively (sijvO₂ ≈ 72 ± 7 %).
+- **Novelty:** Demonstrates human IJV oxygenation from multi-wavelength PA (dual-wavelength PAT + ultrasound, seven healthy volunteers), pushing PA oximetry from superficial microvessels to a clinically meaningful deep venous target.
+- **Integration insight:** Proof that optical/PA venous oximetry can reach a central-venous surrogate; the bridge between Topic 1's clinical need and Topic 2's imaging physics.
+- **Metadata flag:** arxiv.org egress-blocked today; re-verified via ≥2 index snippets (arXiv abstract listing + ADS record 2014SPIE.8943E..1MG lineage entry).
+
+### 2.2 — Arterial Blood-Mediated Deep-Tissue Photoacoustic Oximetry (APM+): in-vivo human radial-vein sO₂ *(previously surfaced — upgraded 07-15)*
+- **Authors:** Sastry, Olick-Gibson, et al.
+- **Year / Venue:** 2026 · *Advanced Science* (Wiley)
+- **Link / DOI:** https://doi.org/10.1002/advs.76366 · https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.76366
+- **Relevance:** 9.0/10 — in-vivo human **radial-vein** sO₂ via a deep-tissue PA method that explicitly tackles spectral coloring; radial artery–vein pair imaged in eight healthy adult volunteers.
+- **Novelty:** The arterial prior method (APM+) leverages high arterial sO₂ to locally calibrate optical fluence and correct wavelength-dependent spectral coloring, recovering deep-tissue venous sO₂ where conventional linear unmixing fails. Phantom median estimation error 2.9 % vs 9.8 % for conventional linear unmixing.
+- **Integration insight:** The most recent (2026) primary PA venous-oximetry advance in the corpus; its fluence-correction strategy is the deep-vein counterpart to the retinal per-vessel corrections §2.4/§2.5 catalogue and to the Hybrid-Net / PINN spectral-unmixing leads.
+- **Metadata flag:** Re-confirmed today via Wiley Advanced Science DOI landing + search snippets; full text 403 to direct fetch.
+
+### 2.3 — Oxygenation Heterogeneity Facilitates Spatiotemporal Flow-Pattern Visualization Inside Human Blood Vessels Using PACT *(previously surfaced — scan 06-10/06-11)*
+- **Authors:** (PACT intravascular flow/oxygenation group)
+- **Year / Venue:** 2024 · *Biomedical Optics Express* 15(5):2741 · PMC11161372
+- **Link / DOI:** https://doi.org/10.1364/BOE.518632 → https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-5-2741
+- **Relevance:** 8.0/10 — resolves sO₂ heterogeneity and laminar-flow structure *inside* human vessels (incl. veins) with PACT.
+- **Novelty:** First-time recovery of the parabolic laminar-flow wavefront inside a deep vein in vivo by exploiting intravascular oxygenation heterogeneity across multi-wavelength PA spectra.
+- **Integration insight:** Shows PACT can read *within-lumen* venous oxygen structure, not just a vessel-average — the imaging counterpart to the "fuse oximetry with blood-flow measurement" thesis.
+- **Metadata flag:** DOI numeral not re-verifiable on the Optica page today (403); Optica locator (boe-15-5-2741) + PMC11161372 + title/year cross-confirmed. Cite via the Optica URL; treat the raw DOI numeral as **unverified**.
+
+### 2.4 — Adaptive Spectroscopic Visible-Light OCT for Clinical Retinal Oximetry (ADS-vis-OCT) *(previously surfaced — scan 06-11)*
+- **Authors:** (ADS-vis-OCT group)
+- **Year / Venue:** 2023 · *Communications Medicine* 3:59
+- **Link / DOI:** https://doi.org/10.1038/s43856-023-00288-8 · PMC10126115
+- **Relevance:** 8.5/10 — per-vessel retinal **vein** sO₂ with reported repeatability SD ≈ 2.3 % in veins; artery RMSE vs pulse oximeter ≈ 2.1 % across 18 participants.
+- **Novelty:** Adaptively removes per-vessel spectral contaminants, yielding accurate, repeatable artery *and vein* sO₂ across varying vessel diameters in humans (arteries ≈95 %, veins ≈72 % in reported cohorts).
+- **Integration insight:** The highest-precision per-vessel venous optical readout in the corpus; the concrete modality the retinal-oximetry review holds up as state-of-the-art for retinal venular oximetry.
+- **Metadata note:** Title/venue/DOI re-confirmed today via Nature *Communications Medicine* landing + PMC10126115 + PubMed 37095177 snippet.
+
+### 2.5 — Development and Validation of a High-Resolution Hyperspectral Imaging System for the Retina *(previously surfaced — first surfaced 08-13; per-vessel retinal artery + vein sO₂; most recent genuinely-new entry)*
+- **Authors:** Tran M.H., Pruitt K., Bryarly M., Emordi I., Ali A., Ma L., Fei B. (Quantitative Bioimaging Laboratory, UT Dallas / UT Southwestern)
+- **Year / Venue:** **2026** · *Journal of Biomedical Optics* **31**(3):036006 (2026 Mar 1)
+- **Link / DOI:** https://doi.org/10.1117/1.JBO.31.3.036006 · PMC12997856 · SPIE: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-31/issue-3/036006/
+- **Relevance:** 7.5/10 — a 2026 hyperspectral fundus system that measures **per-vessel retinal venule sO₂ (≈58–65 %)** alongside arteriole sO₂ (≈91–98 %) and vessel diameter; a true intravascular venular optical readout, though retinal per-vessel, **not systemic SvO₂**.
+- **Novelty:** High-resolution snapshot/hyperspectral retinal imager (snapshot hyperspectral camera + high-resolution RGB camera + beamsplitter + imaging endoscope) that recovers vessel diameter *and* oxygenation simultaneously; a **deep-learning pansharpening** step fuses high-spatial and high-spectral channels (reported pansharpening RMSE 2.15 ± 0.64, correlation 0.96 ± 0.05). Reported venous sO₂ (mean ≈ 64.5 ± 3.5 % in the validation cohort) matches the accepted retinal venous norm, giving physiological face-validity to the calibration.
+- **Integration insight:** A 2026 entry in the retinal-oximetry cluster (with ADS-vis-OCT §2.4). It advances the *spatial–spectral fusion* angle — using deep learning to reconcile the resolution/spectral-sampling trade-off that limits fundus HSI — the same class of confound (per-vessel diameter, vessel boundary, media transparency) the vis-OCT and deep-vein PA work must correct. Reinforces that retinal venular oximetry remains the most mature, best-validated proving ground for per-vessel venous optical measurement, and offers a cheaper camera-based route (vs vis-OCT / PA hardware) toward the same per-vessel venous readout.
+- **Metadata flag:** Title, authors, venue, volume/issue/article-number and DOI cross-confirmed across ≥2 independent index snippets (SPIE Digital Library listing + PMC12997856 + UT Southwestern Pure). **Full text not read** — spiedigitallibrary.org and pmc.ncbi.nlm.nih.gov were egress-blocked to direct fetch; numeric performance figures are snippet-level and should be treated as reported-not-verified.
+
+**Topic-2 note:** the anchors most on-target for *systemic deep-vein* venous oximetry (§2.1 IJV-PA, §2.2 APM+ radial vein) are unchanged; no new item this cycle strengthens either the systemic deep-vein or the retinal per-vessel sub-cluster.
+
+---
+
+## Standing context leads (not ranked in the top-5)
+
+- **⭐ NEW TO CORPUS — Wearable frequency-domain near-infrared spectroscopy (FD-NIRS) system** — (Notre Dame Dept. of Electrical Engineering + UC Irvine EECS group; corresponding author **Thomas D. O'Sullivan**) · *Biomedical Optics Express* **17**(2):555–571 (**published 2026-01-05**; accepted 2025-12-28). A real-time **multi-frequency (50–350 MHz)** wearable FD-NIRS device built on a custom **ASIC**, with 685 nm and 850 nm laser diodes and a SiPM detector; ~37 g without battery, <7 × 3 × 3 cm, 14.7 Hz measurement rate, phantom optical-property accuracy 0.0007 mm⁻¹ (μₐ) / 0.08 mm⁻¹ (μ′ₛ). **Tissue-level (StO₂), NOT venous-specific** — it quantifies HbO/HHb and tissue saturation, with the deoxy-hemoglobin (HHb) signal noted as arising from the venous compartment. Its value to this corpus is as a **2026 hardware substrate for the quantitative-separation venous strategy**: FD-NIRS recovers *absolute* absorption/scattering (so absolute HbO/HHb, not just relative change), which is precisely what the respiration-modulation venous-NIRS methods (spiroximetry lineage; §1.2/§1.3) need to convert an isolated venous component into a calibrated SvO₂. A wearable, absolute-quantitative FD-NIRS front-end lowers the hardware barrier for the wearable-venous device class (§1.4). Logged as a method/hardware lead, not a ranked venous result. *Metadata (title, venue, vol/issue/pages, date, corresponding author) cross-confirmed across PMC12904531 snippet + Optica Open preprint listing (preprints.opticaopen.org/.../30632807) + BOE index snippet; DOI numeral not directly readable (pmc/opg/preprints.opticaopen.org egress-blocked) — treat raw DOI as unverified, cite via BOE 17(2):555.*
+- **⭐ NEW TO CORPUS — Advances in fully integrated wearable near-infrared spectroscopy: hardware innovations and biomedical applications** — (authors unverified) · *Journal of Physics: Photonics* (IOP), 2026 · DOI 10.1088/2515-7647/ae6ae4. Topical state-of-the-art **review** synthesizing fully-integrated wearable NIRS hardware across CW, time-domain and frequency-domain techniques, spanning arterial and venous hemodynamic/tissue-oxygenation applications. **Tissue-level context, NOT a venous measurement result.** Useful as a 2026 review-level map of the wearable-NIRS hardware landscape that the Topic-1 wearable-venous device class (§1.3/§1.4) and the new FD-NIRS lead sit within. *Metadata: title/venue/DOI cross-confirmed via IOPscience listing + a second index snippet; authors and exact publication month not verifiable (iopscience.iop.org egress-blocked). Reported-not-verified.*
+- **Two photoacoustic spectral-coloring compensation techniques adapted to the context of human in-vivo oxygenation measurements** — Khodaverdi A., Jayet B., Erlöv T., Albinsson J., Merdasa A., Gustafsson N., Sheikh R., Malmsjö M., Andersson-Engels S., Cinthio M. (Lund University) · *Biomedical Optics Express* **16**(6):2217–2231 (**2025**). Adapts two spectral-coloring compensation methods to real human in-vivo PA data (phantom relative MSE reduced from ~65 % to ~1.2 % at highest concentration; applied to in-vivo human **finger** sO₂ maps). **Tissue-level, NOT venous-specific**, but a direct method sibling to the deep-vein decoloring problem (§2.2 APM+) and one of the few papers testing fluence/spectral-coloring correction on *actual human in-vivo* PA data. *DOI numeral not directly readable; cite via BOE 16(6):2217. Reported-not-verified.*
+- **Near-infrared spectroscopy demonstrates preserved and reproducible resting skeletal muscle oxygenation across anatomical sites in stable heart failure** — *Am. J. Physiol. Heart Circ. Physiol.* (2026) · DOI 10.1152/ajpheart.00398.2026. **Tissue-level (StO₂), NOT venous.** CW-NIRS reproducibility study; StO₂ is a mixed arterial+venous microvascular quantity. 2026 StO₂-reproducibility baseline for the wearable/tissue-oximetry device class (§1.3/§1.4). *journals.physiology.org egress-blocked; snippet-verified only.*
+- **Retinal Oximetry: New Insights into Ocular and Systemic Diseases** — Zhang W., Tu X., Wang X., et al. · *Graefe's Archive for Clinical and Experimental Ophthalmology* 263:2101–2115 (2025) · DOI 10.1007/s00417-025-06831-8 · PMID 40254630 · PMC12414079. Review consolidating retinal oximetry across spectrophotometric-fundus, hyperspectral, and vis-OCT modalities. Review-level companion to §2.5 / §2.4.
+- **Diffuse Optical Spectroscopy and Imaging X (SPIE Proc. Vol. 13935, 2025)** — proceedings-level DOS/DOI collection; the current SPIE venue for respiration-modulation venous DOS methods (spiroximetry, cerebral-venous DOS). Listing-verified only.
+- **Integrated spectral and depth compensation for sO₂ and total-hemoglobin estimation in PAT for ovarian-lesion diagnosis (ISDC)** — *Biomed. Opt. Express*-lineage, 2026 · PMC12869027. Deep-tissue PAT sO₂ via spectral+depth fluence compensation; **not venous-specific** (arterial+venous tissue, ovarian). Method lead for the deep-vein decoloring problem (§2.2). Snippet-verified only.
+- **Comparative assessment of healthy tissue oxygenation using near-infrared imaging, transcutaneous oxygen measurement, and plethysmography** — El Masry et al. · *Scientific Reports* 15:30424 (2025) · PMID 40830190 · PMC12365204 · DOI 10.1038/s41598-025-15767-2. **Tissue-level (StO₂), NOT venous.** SFDI uniquely detected significant StO₂ differences; device-to-device correlations only moderate-to-fair — a cross-modality-agreement baseline for the wearable-venous device class (§1.3/§1.4).
+- **Deep Learning-Driven Quantitative Spectroscopic PA Imaging for Segmentation and Oxygen Saturation Estimation (Hybrid-Net)** — arXiv:2512.15394 (Dec 2025). Joint vessel segmentation + sO₂ estimation without explicit fluence estimation; MC-simulated sPA (700/850 nm), retrained on phantoms. Not venous-specific but relevant to the deep-vein PA decoloring problem (§2.2). arxiv.org egress-blocked; re-verified via ADS record 2025arXiv251215394S + index snippet.
+- **Optical Inversion and Spectral Unmixing of Spectroscopic PA Images with Physics-Informed Neural Networks (SPOI-AE)** — arXiv:2602.16357 (surfaced 06-11). Non-linear PA optical-inversion/unmixing autoencoder; not venous-specific. Method lead.
+- **Distribution-Informed and Wavelength-Flexible Data-Driven Photoacoustic Oximetry** — arXiv:2403.14863. Learned spectral unmixing robust to unknown wavelength sets. Method lead, not venous-specific.
+- **Machine-learning-enabled multiple-illumination quantitative optoacoustic oximetry imaging in humans** — PMC8336722 / PMC9203099. Multiple-illumination + learned spectral decoloring for quantitative PA sO₂ in humans; tissue/vessel-level, not venous-specific. Method lead underpinning the deep-vein decoloring family (§2.2 / Hybrid-Net / Khodaverdi).
+- **Learned Spectral Decoloring enables Photoacoustic Oximetry** — *Scientific Reports* 11:6565 (2021) · DOI 10.1038/s41598-021-83405-8 · arXiv:1902.05839 · PMC7985523. Foundational learned-decoloring method; conceptual root of the data-driven-unmixing leads above. Not venous-specific.
+- **Improved Spectral Inversion of Blood Oxygenation due to Reduced Tissue Scattering: Towards NIR-II Photoacoustic Imaging** — bioRxiv 2024.08.08.607178. NIR-II wavelengths cut blood sO₂ estimation error ~50 % vs conventional NIR-I. Wavelength-selection lead for the deep-vein decoloring problem (§2.2); not venous-specific.
+- **Sulfate Phantoms to Mimic NIR Photoacoustic Response of Whole Blood at Selected Oxygen Saturations** — Davenet et al. (Sorbonne Université), 2026 · *Applied Optics* 65(6):1974 (also arXiv:2512.01458). Ground-truth phantom for validating deep-vein PA oximetry across the venous ≈40–75 % range. Standing metrology lead.
+- **Anthropomorphic tissue-mimicking phantoms for oximetry validation in multispectral optical imaging** — arXiv:2503.23161. Anthropomorphic phantom framework for validating multispectral/PA oximetry; metrology lead. Not venous-specific.
+- **Photoacoustic Imaging Phantoms for Assessing Image Quality and Oximetry Performance** — FDA CDRH-RST resource. Regulatory-science phantom/reference for PA oximetry validation; not a venous result, but relevant metrology context for the device-pathway anchors (§1.6, §2.1/§2.2). Listing-verified only.
+- **SFDI-net / deep-learning-enabled spatial frequency domain imaging** — *J. Biomed. Opt.* 30(4):046008 (2025; PMC12014942). Real-time two-layer SFDI inversion to hemoglobin/sO₂ maps; tissue-level. Transferable wide-field lead, not intravascular venous.
+- **Near-Infrared Spiroximetry** (respiration-frequency-filtered NIRS venous saturation; Franceschini/Fantini lineage; *J. Appl. Physiol.* 92(1):372, 2002; PMC3786737). Foundational method for isolating the venous component by respiratory modulation — the physiological root of the "filter at the respiration frequency" strategy shared by §1.2/§1.3 and cerebral-venous DOS. The new FD-NIRS hardware lead (above) is a modern quantitative front-end for exactly this method. Standing method lead; re-confirmed today.
+- **PPG-waveform venous oximetry** (finger-PPG venous saturation from positive-pressure-ventilation modulation). Foundational peripheral-venous method family; conceptual sibling of §1.3.
+- **Noninvasive optical quantification of cerebral venous oxygen saturation in humans** — PMID 24439329 (*Acad. Radiol.*, 2014; PMC4126245). Respiration-frequency-selected NIRS validated against a gold-standard cerebral-venous measurement; the cerebral-venous companion to the spiroximetry lead. Standing method lead, re-confirmed today.
+- **Noninvasive tracking of mixed venous oxygen saturation via NIRS cerebral oximetry** — *Scientific Reports* 13, s41598-023-49078-1 (2023). Retrospective study relating cerebral-oximetry NIRS to mixed venous saturation; a tissue-NIRS surrogate for systemic venous. Context lead for the jugular/cerebral-NIRS class (§1.5). Snippet-verified.
+- **Performance of Wearable Pulse Oximetry During Controlled Hypoxia Induction** — *JMIR Formative Research*, 2026 (formative.jmir.org/2026/1/e85253). **Arterial-only** wearable SpO₂ validation showing >FDA-threshold error in the hypoxemic range — a transferable accuracy caution for the wearable-venous device class (§1.3/§1.4/§1.6), which operates at even lower saturations.
+- **Quantitative Oximetry with PACT: Principles, Progress, and Prospects** — *J. Innov. Opt. Health Sci.*, 2026 (DOI 10.1142/S1793545826300065; worldscientific.com). Review scaffold under the deep-vein PA anchors; authors unverified.
+- **Classic ovine / large-vein optoacoustic SSS venous work** (Esenaliev/Petrov lineage; superior sagittal sinus triple-wavelength optoacoustic oximetry; transfontanelle cerebral oximetry, *Sci. Rep.* 2022 s41598-022-19350-x). Foundational venous-optoacoustic prior art, with a concrete commercial endpoint logged (§1.6, Noninvasix LIVOx).
+- **Photoacoustic transesophageal echocardiography (PA-TEE) for mixed venous oxygen saturation** — ADS 2016SPIE.9689E..2UL (conference-presentation lineage). Early concept for continuous non-invasive SvO₂ monitoring by integrating TEE with PA oximetry; targets a *mixed venous* readout. Standing concept lead; not a recent dated paper.
+- **Karlas et al., MSOT of muscle perfusion/oxygenation under arterial and venous occlusion — human pilot** (*J. Biophotonics* 2020). Tissue-level (StO₂), not intravascular SvO₂; closest MSOT venous-challenge human data.
+
+---
+
+## Cross-topic synthesis
+
+Today's one-day sweep (08-21 → 08-22) produced **no new intravascular venous optical result** for either topic, and **no item genuinely new to the ranked corpus**. The two genuinely new-to-corpus finds are both **tissue-level wearable-NIRS** items — a 2026 *Biomed. Opt. Express* wearable **FD-NIRS** hardware paper (O'Sullivan group, Notre Dame/UC Irvine) and an IOP wearable-NIRS **review** — logged as method/context leads, not venous results. **No new systemic SvO₂/ScvO₂ measurement paper appeared — the nineteenth consecutive dry cycle** for true central/peripheral venous work once arterial-only and tissue-level items are excluded. The most recent genuinely-new *venous* result in the corpus remains the 08-13 Tran et al. hyperspectral retinal imager (§2.5), in the **retinal per-vessel venular** sub-cluster.
+
+The two topics remain coupled by one problem — **isolating the venous signal and correcting the confound that corrupts its saturation estimate** — addressed by three complementary strategies:
+
+1. **Anatomical targeting** of a large, named vein (jugular optical sensing §1.1, jugular NIRS §1.5, IJV-PA §2.1, chest/SSS optoacoustic LIVOx §1.6) — pick a vessel big enough that the venous signal dominates.
+2. **Signal modulation / separation** to lift a small venous component out of a noisy mixed background (peripheral-venous modulation §1.3, e-tattoo spatial filtering §1.4, DNN inversion §1.2, respiration-frequency spiroximetry/cerebral-venous DOS, PPG-waveform venous oximetry). **Today's new wearable FD-NIRS lead lands here on the hardware side**: because FD-NIRS recovers *absolute* absorption (hence absolute HbO/HHb rather than relative change), it is the kind of quantitative front-end the respiration-modulation venous-NIRS methods need to turn an isolated venous component into a calibrated SvO₂ — in a wearable, ASIC-scale form. The standing tissue-level NIRS leads (AJP-Heart, El Masry) remain the reminder that *reproducibility* of the underlying StO₂ signal — not just accuracy — is a live weakness this whole family must beat.
+3. **Physics- and data-based decoloring / per-vessel correction** before unmixing (deep-tissue PA fluence correction §2.2, per-vessel spectral cleanup in vis-OCT §2.4, intravascular PACT §2.3, hyperspectral spatial–spectral fusion §2.5, plus the Hybrid-Net / SPOI-AE / learned-spectral-decoloring / distribution-informed / ISDC / NIR-II unmixing leads, the Khodaverdi in-vivo compensation lead, and the sulfate-/anthropomorphic-phantom and FDA-CDRH metrology).
+
+The most mature, highest-precision proving ground for the strategy-3 corrections remains **retinal venular oximetry** (§2.4/§2.5). The hardest open problem remains the **systemic deep vein**, where §2.1/§2.2 push PA fluence correction toward a clinically meaningful central-venous surrogate, and where §1.6 shows one optoacoustic embodiment has already reached a regulatory pathway. The counterweight is unchanged: even *arterial* wearable oximetry (the JMIR lead) fails in the low-saturation range where venous measurement lives, and tissue-level modalities disagree substantially and repeat imperfectly (El Masry + AJP-Heart leads). Net: **no bedside-ready systemic non-invasive SvO₂ optical research result emerged this cycle**, and the honest population of strong, truly-venous, truly-optical *new* papers remains **fewer than five per topic** once arterial-only and tissue-level work is excluded.
+
+---
+
+*Scan generated 2026-08-22 (UTC). Metadata cross-checked across ≥2 search-index snippets per item; pubmed.ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov, opg.optica.org, preprints.opticaopen.org, iopscience.iop.org, journals.physiology.org, www.spiedigitallibrary.org, and arxiv.org were egress-blocked, and publisher full-text pages returned HTTP 403 to direct fetch in this environment (source-/policy-side; agent proxy healthy), so items flagged "full text not read" / "snippet-verified" are abstract- or snippet-level and flagged unverified fields are noted inline.*
